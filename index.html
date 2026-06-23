@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luis Naal | Desarrollador Full Stack</title>
+    <meta name="description" content="Portafolio de Luis Naal Pacheco, Desarrollador Full Stack especializado en automatización de procesos contables y financieros." />
+    
+    <!-- Tailwind CSS vía CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- NAVBAR -->
+    <!-- ============================================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="logo">&lt;<span>AureumDev</span>/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- HERO -->
+    <!-- ============================================ -->
+    <section class="hero" id="home" aria-label="Presentación">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">
+                    <i class="fas fa-code" aria-hidden="true"></i> Full Stack Developer
+                </div>
+                <h1>
+                    Hola, soy <br />
+                    <span class="highlight">Luis Naal Pacheco</span>
+                </h1>
+                <p>
+                    Desarrollador web full-stack con experiencia en automatización de
+                    procesos contables y financieros. React · Node · AWS · Flutter
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-rocket" aria-hidden="true"></i> Ver Proyectos
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Contáctame
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <img 
+                        src="/img/perfil.jpg" 
+                        alt="Foto de perfil de Luis Naal Pacheco" 
+                        loading="lazy"
+                        width="360"
+                        height="360"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SOBRE MÍ -->
+    <!-- ============================================ -->
+    <section class="section" id="about" aria-label="Sobre mí">
+        <h2 class="section-title">
+            Sobre <span class="highlight">Mí</span>
+        </h2>
+        <div class="section-subtitle">
+            Ingeniero en Desarrollo y Gestión de Software · Apasionado por la automatización
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    Soy Ingeniero en Desarrollo y Gestión de Software egresado de la
+                    <strong>Universidad Tecnológica Metropolitana</strong>, con formación
+                    técnica en Informática desde 2018 que me ha dado una base sólida en sistemas.
+                </p>
+                <p>
+                    Mi experiencia combina el desarrollo <strong>full-stack</strong> con un
+                    enfoque especial en <strong>automatización de procesos contables y fiscales</strong>.
+                    He trabajado con tecnologías modernas como React, Node.js, AWS (Lambda, S3)
+                    y bases de datos SQL, desarrollando soluciones que han reducido tiempos
+                    de procesos hasta en un <strong>80%</strong>.
+                </p>
+                <p>
+                    Lo que me diferencia es mi capacidad para <strong>entender el negocio</strong>
+                    y traducirlo en código funcional. He modificado librerías open-source para
+                    adaptarlas a necesidades específicas, implementado microservicios con NestJS,
+                    y desarrollado aplicaciones multiplataforma con Flutter.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Años de experiencia</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Tecnologías principales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Empresas colaboradas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">80%</div>
+                    <div class="stat-label">Reducción de tiempos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99.7%</div>
+                    <div class="stat-label">Precisión en cálculos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">B1</div>
+                    <div class="stat-label">Inglés intermedio</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- HABILIDADES -->
+    <!-- ============================================ -->
+    <section class="section" id="skills" aria-label="Habilidades técnicas">
+        <h2 class="section-title">
+            Mis <span class="highlight">Habilidades</span>
+        </h2>
+        <div class="section-subtitle">
+            Tecnologías que uso para construir soluciones
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fab fa-react" aria-hidden="true"></i>
+                <span>React</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-node-js" aria-hidden="true"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-aws" aria-hidden="true"></i>
+                <span>AWS</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database" aria-hidden="true"></i>
+                <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js" aria-hidden="true"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-java" aria-hidden="true"></i>
+                <span>Java</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-code" aria-hidden="true"></i>
+                <span>C#</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-server" aria-hidden="true"></i>
+                <span>NestJS</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-flask" aria-hidden="true"></i>
+                <span>Jest</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-cloud" aria-hidden="true"></i>
+                <span>Lambda</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-code-branch" aria-hidden="true"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database" aria-hidden="true"></i>
+                <span>SQL Server</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                <span>Tailwind</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js" aria-hidden="true"></i>
+                <span>TypeScript</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PROYECTOS -->
+    <!-- ============================================ -->
+    <section class="section" id="projects" aria-label="Proyectos">
+        <h2 class="section-title">
+            Mis <span class="highlight">Proyectos</span>
+        </h2>
+        <div class="section-subtitle">
+            Soluciones que he desarrollado en mi experiencia profesional
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-tag">
+                    <i class="fas fa-building" aria-hidden="true"></i> Experiencia Laboral
+                </div>
+                <h3>Sistema de Automatización Contable</h3>
+                <p>
+                    Sistema integral para la gestión fiscal y contable de empresas mexicanas.
+                    Automatiza el cálculo de impuestos (IVA, ISR), genera facturas CFDI y
+                    realiza conciliaciones bancarias automáticas. Reducción del cierre mensual
+                    de 5 días a 6 horas.
+                </p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Tailwind</span>
+                    <span>Node.js</span>
+                    <span>AWS Lambda</span>
+                    <span>PostgreSQL</span>
+                    <span>Jest</span>
+                </div>
+                <a href="#" class="project-link" aria-label="Ver más sobre el Sistema de Automatización Contable">
+                    Ver más <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-tag">
+                    <i class="fas fa-building" aria-hidden="true"></i> Experiencia Laboral
+                </div>
+                <h3>Plataforma Multiplataforma de Gestión</h3>
+                <p>
+                    Aplicación de gestión empresarial disponible en web (React) y dispositivos
+                    móviles (Flutter). Arquitectura basada en microservicios con NestJS.
+                    Implementación de 3 microservicios independientes para escalabilidad.
+                </p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Flutter</span>
+                    <span>NestJS</span>
+                    <span>SQL Server</span>
+                    <span>Jest</span>
+                </div>
+                <a href="#" class="project-link" aria-label="Ver más sobre la Plataforma Multiplataforma de Gestión">
+                    Ver más <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- EXPERIENCIA -->
+    <!-- ============================================ -->
+    <section class="section" id="experience" aria-label="Experiencia profesional">
+        <h2 class="section-title">
+            Mi <span class="highlight">Trayectoria</span>
+        </h2>
+        <div class="section-subtitle">
+            Experiencia profesional acumulada
+        </div>
+
+        <div class="experience-timeline">
+            <article class="exp-item">
+                <div class="exp-date">2025 - 2026 · 1 año</div>
+                <div>
+                    <div class="exp-company">Empresa de Giro Contable</div>
+                    <div class="exp-role">Full Stack Developer</div>
+                    <div class="exp-desc">
+                        Desarrollo Front End con React, Tailwind y Hero UI. Backend con Node.js.
+                        Modificación de librerías, AWS (Lambda, S3), pruebas directas a Lambda.
+                        Reportes de IVA, ISR, módulos de timbrados, facturación y automatización
+                        de procesos contables.
+                    </div>
+                </div>
+            </article>
+
+            <article class="exp-item">
+                <div class="exp-date">2025 · 5 meses</div>
+                <div>
+                    <div class="exp-company">HOSTECH</div>
+                    <div class="exp-role">Desarrollador Full Stack</div>
+                    <div class="exp-desc">
+                        Servicios profesionales. Backend con NestJS y desarrollo de microservicios.
+                        Frontend con React. Pruebas unitarias con Jest.
+                    </div>
+                </div>
+            </article>
+
+            <article class="exp-item">
+                <div class="exp-date">2023 · 6 meses</div>
+                <div>
+                    <div class="exp-company">ETECNO</div>
+                    <div class="exp-role">Desarrollador Frontend Multiplataforma</div>
+                    <div class="exp-desc">
+                        Desarrollo frontend multiplataforma con Dart y Flutter.
+                    </div>
+                </div>
+            </article>
+
+            <article class="exp-item" style="border-left-color: #555;">
+                <div class="exp-date">2021 - 2025</div>
+                <div>
+                    <div class="exp-company">Universidad Tecnológica Metropolitana</div>
+                    <div class="exp-role">Ingeniería en Desarrollo y Gestión de Software</div>
+                    <div class="exp-desc">
+                        Formación universitaria con enfoque en desarrollo de software, gestión de
+                        proyectos y metodologías ágiles.
+                    </div>
+                </div>
+            </article>
+
+            <article class="exp-item" style="border-left-color: #555;">
+                <div class="exp-date">2018 - 2021</div>
+                <div>
+                    <div class="exp-company">Carrera Técnica en Informática</div>
+                    <div class="exp-role">Técnico en Informática</div>
+                    <div class="exp-desc">
+                        Formación técnica en sistemas, programación y soporte informático.
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACTO -->
+    <!-- ============================================ -->
+    <section class="section" id="contact" aria-label="Contacto">
+        <h2 class="section-title">
+            <span class="highlight">Contacto</span>
+        </h2>
+        <div class="section-subtitle">
+            ¿Tienes un proyecto? Hablemos
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>
+                    Estoy abierto a nuevas oportunidades y colaboraciones.
+                    Si tienes un proyecto en mente o quieres platicar sobre
+                    automatización de procesos, ¡no dudes en contactarme!
+                </p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/luisnaaldev/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       title="LinkedIn de Luis Naal"
+                       aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Lucas-Naal" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       title="GitHub de Luis Naal"
+                       aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:luisfernandonaalpacheco@gmail.com" 
+                       title="Correo electrónico"
+                       aria-label="Enviar correo electrónico">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <form 
+                class="contact-form" 
+                id="contactForm" 
+                action="https://formspree.io/f/mwvdppyq" 
+                method="POST"
+            >
+                <input type="hidden" name="_next" value="https://tu-portafolio.com/gracias.html" />
+                <input type="text" name="_gotcha" style="display:none" />
+                
+                <label for="contactName" class="sr-only">Tu nombre</label>
+                <input 
+                    type="text" 
+                    id="contactName"
+                    name="name"
+                    placeholder="Tu nombre" 
+                    required 
+                    aria-required="true"
+                />
+                
+                <label for="contactEmail" class="sr-only">Tu correo electrónico</label>
+                <input 
+                    type="email" 
+                    id="contactEmail"
+                    name="email"
+                    placeholder="Tu correo electrónico" 
+                    required 
+                    aria-required="true"
+                />
+                
+                <label for="contactSubject" class="sr-only">Asunto</label>
+                <input 
+                    type="text" 
+                    id="contactSubject"
+                    name="subject"
+                    placeholder="Asunto" 
+                />
+                
+                <label for="contactMessage" class="sr-only">Mensaje</label>
+                <textarea 
+                    id="contactMessage"
+                    name="message"
+                    placeholder="Cuéntame sobre tu proyecto..."
+                    required
+                    aria-required="true"
+                ></textarea>
+                
+                <button type="submit">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i> Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer role="contentinfo">
+        <p>
+            &copy; 2026 <span>Luis Naal</span> · Hecho con 
+            <i class="fas fa-heart heart" aria-hidden="true"></i>
+            <span class="sr-only">amor</span>
+        </p>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT (SOLO UN ARCHIVO) -->
+    <!-- ============================================ -->
+    <script src="js/main.js"></script>
+</body>
+</html>
